@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Horizon Dynamics - Contact Us</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo">Horizon Dynamics</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+      </ul>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Get in Touch</h1>
+        <p class="subtitle">We're here to answer your questions and help solve your challenges</p>
+      </div>
+    </section>
+
+    <section class="contact-grid container">
+      <div class="contact-info">
+        <h2>Connect With Us</h2>
+        
+        <div class="contact-methods">
+          <div class="contact-method">
+            <div class="contact-icon">📍</div>
+            <div class="contact-details">
+              <h3>Visit Our Office</h3>
+              <address>
+                123 Innovation Drive<br>
+                Nairobi, Kenya<br>
+                CA 94103, Kenya
+              </address>
+            </div>
+          </div>
+          
+          <div class="contact-method">
+            <div class="contact-icon">📞</div>
+            <div class="contact-details">
+              <h3>Call Us</h3>
+              <p>Main: <a href="tel:+25412345678">(254) 555-0123</a></p>
+              <p>Support: <a href="tel:+25412345678">(254) 555-0124</a></p>
+            </div>
+          </div>
+          
+          <div class="contact-method">
+            <div class="contact-icon">✉️</div>
+            <div class="contact-details">
+              <h3>Email Us</h3>
+              <p>General: <a href="mailto:info@horizondynamics.com">info@horizondynamics.com</a></p>
+              <p>Support: <a href="mailto:support@horizondynamics.com">support@horizondynamics.com</a></p>
+            </div>
+          </div>
+          
+          <div class="contact-method">
+            <div class="contact-icon">🕒</div>
+            <div class="contact-details">
+              <h3>Business Hours</h3>
+              <p>Monday - Friday: 9:00 AM - 6:00 PM PST</p>
+              <p>Saturday - Sunday: Closed</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="social-connect">
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <span class="social-icon">in</span>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <span class="social-icon">𝕏</span>
+            </a>
+            <a href="#" class="social-link" aria-label="GitHub">
+              <span class="social-icon">GH</span>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <span class="social-icon">IG</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-form-container">
+        <div class="form-card">
+          <h2>Send Us a Message</h2>
+          <p class="form-intro">Fill out the form below and one of our team members will get back to you within 24 hours.</p>
+          
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name">Full Name <span class="required">*</span></label>
+              <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address <span class="required">*</span></label>
+              <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+            </div>
+            
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" placeholder="Enter your company name (optional)" />
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter your phone number (optional)" />
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">Subject <span class="required">*</span></label>
+              <select id="subject" name="subject" required>
+                <option value="" disabled selected>Select a topic</option>
+                <option value="general">General Inquiry</option>
+                <option value="services">Services Information</option>
+                <option value="quote">Request a Quote</option>
+                <option value="support">Technical Support</option>
+                <option value="partnership">Partnership Opportunity</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message <span class="required">*</span></label>
+              <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+            </div>
+            
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="newsletter" name="newsletter" />
+              <label for="newsletter">Subscribe to our monthly newsletter</label>
+            </div>
+            
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="privacy" name="privacy" required />
+              <label for="privacy">I agree to the <a href="privacy.html">privacy policy</a> <span class="required">*</span></label>
+            </div>
+            
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Send Message</button>
+              <button type="reset" class="btn btn-secondary">Clear Form</button>
+            </div>
+            
+            <div id="form-message" class="form-message"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+    
+    <section class="map-section">
+      <div class="container map-container">
+        <h2>Our Location</h2>
+        <!-- Map placeholder - In a real implementation, you would integrate with a maps API -->
+        <div class="map-placeholder">
+          <img src="/api/placeholder/1000/400" alt="Map location" />
+          <div class="map-overlay">Interactive Map Would Appear Here</div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="faq-section container">
+      <h2>Frequently Asked Questions</h2>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-toggle">How quickly can I expect a response to my inquiry?</button>
+          <div class="accordion-content">
+            <p>We aim to respond to all inquiries within 24 business hours. For urgent matters, we recommend calling our support line directly.</p>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <button class="accordion-toggle">Do you offer remote consultations?</button>
+          <div class="accordion-content">
+            <p>Yes, we offer virtual meetings via video conferencing tools to accommodate clients worldwide. We can schedule these at your convenience.</p>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <button class="accordion-toggle">What information should I prepare before our initial consultation?</button>
+          <div class="accordion-content">
+            <p>To make our first meeting most productive, prepare a brief overview of your current challenges, goals, timeline, and budget constraints. Any existing documentation or examples would also be helpful.</p>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <button class="accordion-toggle">Do you work with startups or only established enterprises?</button>
+          <div class="accordion-content">
+            <p>We work with organizations of all sizes, from early-stage startups to Fortune 500 companies. We offer flexible engagement models to suit different business needs and budgets.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Need immediate assistance?</h2>
+          <p>Our support team is available by phone during business hours.</p>
+          <a href="tel:+14155550124" class="btn btn-primary">Call (415) 555-0124</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid container">
+      <div class="footer-col">
+        <h3>Horizon Dynamics</h3>
+        <p>Transforming businesses through innovative technology solutions since 2018.</p>
+        <div class="social-links">
+          <a href="#" aria-label="LinkedIn"><span class="social-icon">in</span></a>
+          <a href="#" aria-label="Twitter"><span class="social-icon">𝕏</span></a>
+          <a href="#" aria-label="GitHub"><span class="social-icon">GH</span></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="team.html">Meet the Team</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="blog.html">Company Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <address>
+          <p>123 Innovation Drive<br>Tech District, CA 94103</p>
+          <a href="mailto:info@horizondynamics.com">info@horizondynamics.com</a><br>
+          <a href="tel:+14155550123">(254) 555-0123</a>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2025 Horizon Dynamics. All rights reserved.</p>
+        <div class="legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="cookies.html">Cookie Preferences</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
